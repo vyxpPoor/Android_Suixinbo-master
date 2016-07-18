@@ -2,13 +2,13 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
-
+    <!--最底下的播放界面-->
     <include
         android:id="@+id/av_video_layer_ui"
         layout="@layout/qav_video_layer_ui"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" />
-
+    <!--提示语,礼物的问题提示-->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -27,19 +27,19 @@
 
     </ScrollView>
 
-
+    <!--控制层的写法-->
     <FrameLayout
         android:id="@+id/controll_ui"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
+        <!--头像,时间,喜欢人数,观看人数-->
         <include
             android:id="@+id/head_up_layout"
             layout="@layout/head_up_layout"
             android:layout_width="180dp"
             android:layout_height="wrap_content" />
 
-
+        <!--房间id-->
         <TextView
             android:id="@+id/room_id"
             android:layout_width="wrap_content"
@@ -49,7 +49,7 @@
             android:layout_marginTop="10dp"
             android:text="1231231" />
 
-
+        <!--视屏格式-->
         <TextView
             android:id="@+id/param_video"
             android:layout_width="30dp"
@@ -59,7 +59,7 @@
             android:layout_marginTop="30dp"
             android:background="@drawable/btn_par" />
 
-
+        <!--推流-->
         <TextView
             android:id="@+id/push_btn"
             android:layout_width="40dp"
@@ -71,7 +71,7 @@
             android:background="@drawable/icon_push_stream"
             />
 
-
+        <!--录制-->
         <TextView
             android:id="@+id/record_btn"
             android:layout_width="30dp"
@@ -84,7 +84,7 @@
             android:gravity="center"
             android:textSize="14sp" />
 
-
+        <!--互动连麦-->
         <TextView
             android:id="@+id/video_interact"
             android:layout_width="wrap_content"
@@ -93,7 +93,7 @@
             android:layout_marginLeft="15dp"
             android:layout_marginTop="60dp"
             android:background="@drawable/icon_video_interact" />
-
+        <!--返回按钮-->
         <TextView
             android:id="@+id/btn_back"
             android:layout_width="20dp"
@@ -103,7 +103,7 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/back_live_btn"
             android:onClick="onClick" />
-
+        <!--聊天交流区-->
         <ListView
             android:id="@+id/im_msg_listview"
             android:layout_width="250dp"
@@ -117,7 +117,7 @@
             android:stackFromBottom="true"
             android:transcriptMode="normal" />
 
-
+        <!--观众控制层-->
         <include
             layout="@layout/member_bottom_layout"
             android:layout_width="fill_parent"
@@ -125,8 +125,7 @@
             android:layout_gravity="bottom"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="15dp" />
-
-
+        <!--???-->
         <include
             layout="@layout/video_member_bottom_layout"
             android:layout_width="fill_parent"
@@ -134,7 +133,7 @@
             android:layout_gravity="bottom"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="15dp" />
-
+        <!--房间主人的底部控制层-->
         <include
             layout="@layout/host_bottom_layout"
             android:layout_width="fill_parent"
@@ -143,7 +142,7 @@
             android:layout_marginBottom="10dp"
             android:layout_marginTop="15dp" />
 
-
+        <!--心跳播放的层-->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -161,7 +160,7 @@
 
     </FrameLayout>
 
-
+    <!--美颜设置条-->
     <include
         android:id="@+id/qav_beauty_setting"
         layout="@layout/qav_beauty_setting"
@@ -170,14 +169,14 @@
         android:layout_gravity="bottom|center"
         android:layout_marginBottom="20dp" />
 
-
+    <!--邀请呼叫中-->
     <include
         android:id="@+id/invite_views"
         layout="@layout/invite_views"
         android:layout_width="wrap_content"
         android:layout_height="fill_parent" />
 
-
+    <!--正常全屏的缩小图标-->
     <TextView
         android:id="@+id/normal_btn"
         android:layout_width="wrap_content"
@@ -188,7 +187,7 @@
         android:background="@drawable/icon_nomal"
         android:onClick="onClick"
         android:visibility="gone" />
-
+    <!--主播离开显示的界面-->
     <LinearLayout
         android:id="@+id/ll_host_leave"
         android:visibility="gone"

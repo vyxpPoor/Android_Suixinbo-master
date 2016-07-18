@@ -8,9 +8,7 @@ public class ChatEntity {
 	private String grpSendName;
 	private String context;
 	private int  type;
-
-
-
+	
 
 	public ChatEntity() {
 		// TODO Auto-generated constructor stub
